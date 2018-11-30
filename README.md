@@ -75,3 +75,31 @@ or
 <b>Operations:</b> ```fruits.add(element)``` ```fruits.remove(element)``` ```fruits.clear()``` ```fruits.update(element)``` ```fruits.pop()```
 
 <b>Description:</b> A set is a collection of elements which are unordered and unindexed. And no duplicate members in a set be created.
+
+
+## 7. Dictionary
+<b>Code:</b>
+
+```
+person = {
+     'first_name' = "John",
+     'last_name' = "Nash",
+     'age' = 22
+     }
+```
+     
+<b>Operations:</b> ```person.get(key)``` ```person.items()``` ```person.keys()``` ```person.values()``` ```person.pop(key)``` ```person.clear()``` ```len(person)```
+
+
+## 8. Lambda Functions
+<b>Code:</b> 
+
+```
+getSum = lambda num1, num2: num1 + num2
+print(getSum(10, 3))
+```
+
+<b>Description:</b> A Lambda function ( ```lambda <arguments> : <expression>``` ) can take as many number of arguments, but can only have one expression.
+
+
+### Stay Tuned for more learning...
