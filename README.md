@@ -48,3 +48,30 @@ We can position the arguments inside the ```{ }``` and then call the ```.format(
 ```s = "hello world"```
 
 <b>Operations:</b> ```s.capitalize()``` ```s.upper()``` ```s.lower()``` ```s.swapcase()``` ```len(s)``` ```s.replace(old, new, count)``` ```s.count(substring)``` ```s.startswith(substring)``` ```s.endswith(string)``` ```s.split()``` ```s.find(substring)``` ```s.isalnum()``` ```s.isalpha()``` ```s.isnumeric()```
+
+
+## 4. List Methods
+<b>Code:</b>
+
+```fruits = ["Apples", "Oranges", "Mangos", "Pears"]```
+or 
+```fruits = list(("Apples", "Oranges", "Mangos", "Pears"))```
+
+<b>Operations:</b> ```fruits.append(element)``` ```fruits.remove(element)``` ```fruits.insert(position, element)``` ```fruits.pop(position)``` ```fruits.reverse()``` ```fruits.sort()``` ```fruits.sort(reverse=True)```
+
+
+## 5. Tuple
+<b>Code:</b>
+
+```fruits = ("Apples",)```
+
+<b>Description:</b> If you are assigning a single value inside the tuple please use ```,``` otherwise without ```,``` the ```type(fruits)``` return ```<class 'str'>``` instead of ```<class 'tuple'>```
+
+## 6. Sets
+<b>Code:</b>
+
+```fruits = {"Apples", "Oranges", "Mangos"}```
+
+<b>Operations:</b> ```fruits.add(element)``` ```fruits.remove(element)``` ```fruits.clear()``` ```fruits.update(element)``` ```fruits.pop()```
+
+<b>Description:</b> A set is a collection of elements which are unordered and unindexed. And no duplicate members in a set be created.
