@@ -115,4 +115,37 @@ print(getSum(10, 3))
 <b>Description:</b> A Lambda function ( ```lambda <arguments> : <expression>``` ) can take as many number of arguments, but can only have one expression.
 
 
+## 10. Function Argument Unpacking
+### 10.1. List/Tuple
+<b>Code:</b>
+
+```
+def about(name, age, country):
+    print(f"My name is {name} and I am {age} years old. I live in {country}.")
+    
+about_data = ["John Doe", 22, "USA"]
+
+about(*about_data)
+
+```
+
+<b>Description:</b> In case your data is in a list or tuple then you can fetch it using ```*``` operator i.e. ```about(*about_data)``` instead of typing ```about(about_data[0], about_data[1], about_data[2])```  where ```about_data``` is the variable assigned to your list.
+
+### 10.2. Dictionary
+<b>Code:</b>
+
+```
+def about(name, age, country):
+    print(f"My name is {name} and I am {age} years old. I live in {country}")
+    
+about_data = {'name': "John Doe", 'age': 22, 'country': "USA"}
+
+about(**about_data)
+
+```
+
+<b>Description:</b> In case you have to parse your data (inside a dictionay) then you just have to use ```**``` operator in place of single ```*``` operator. <b>Note that in case of using dictionay the arguments must match exactly with the dictionay keys.</b>
+
+
+
 ### Stay Tuned for more learning...
