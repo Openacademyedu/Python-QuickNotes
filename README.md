@@ -91,7 +91,20 @@ person = {
 <b>Operations:</b> ```person.get(key)``` ```person.items()``` ```person.keys()``` ```person.values()``` ```person.pop(key)``` ```person.clear()``` ```len(person)```
 
 
-## 8. Lambda Functions
+## 8. Merge Dictionaries
+<b>Code:</b>
+
+```
+x1 = {'first_name' : 'John', 'last_name' : 'Doe'}
+y1 = {'age' : 31, 'gender' : 'male'}
+
+merge_x1_y1_dict = {**x1, **y1}
+
+```
+
+<b>Description:</b> We can merge two or more dictionaries using ```**``` operator as shown in above code. In case if the key finds similar in two or more dictionaries, then the value of the key will be updated with the dictionay defined last.
+
+## 9. Lambda Functions
 <b>Code:</b> 
 
 ```
