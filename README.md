@@ -48,11 +48,31 @@ We can assign multiple variables at a single time. The above code is equivalent 
 add = x + y # addition
 sub = x - y # substraction
 div = x / y # division
+mod = x % y # modulus
+expo = x ** y # exponent
 
 ```
 
 ## 3. Type
 
+<b>Note:</b>
+* All classes and metaclasses including ```object``` are subclasses of ```object```.
+* All classes and metaclasses including ```type``` are instances of ```type```.
+* All objects including ```object``` are instances of ```object```.
+
+
+<b>Code:</b>
+
+```
+issubclass(type, object) # True
+issubclass(object, object) # True
+issubclass(object, type)  # False
+isinstance(object, type) # True
+isinstance(type, type) # True
+isinstance(type, object) # True
+isinstance(object, object) # True
+
+```
 
 ## 4. Casting
 
