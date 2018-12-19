@@ -9,6 +9,7 @@ Follow the quick notes to learn python programming.
 * Variable names are case sensitive i.e both <b>var</b> and <b>VAR</b> are different variables.
 * Variable names must <u>start with a letter or an underscore</u>. Eg: <b>_var</b> 
 * Variable names can contain a number in between but not at the start. Eg: <b>var1</b>
+* Variable names must not use spaces in between
 
 ### 1.1 Single Assignment
 
@@ -251,5 +252,118 @@ about(**about_data)
 <b>Description:</b> In case you have to parse your data (inside a dictionay) then you just have to use ```**``` operator in place of single ```*``` operator. <b>Note that in case of using dictionay the arguments must match exactly with the dictionay keys.</b>
 
 
+## 12. If/Else Statements
+<b>Code:</b>
 
-### Stay Tuned for more learning...
+```
+if (condition):
+   statement
+else:
+   statement
+
+```
+
+## 13. Operators
+### 13.1 Comparision Operators
+
+<b>Operators:</b> ```==``` ```!=``` ```>``` ```<``` ```>=``` ```<==```
+
+### 13.2 Logical Operators
+
+<b>Operators:</b> ```and``` ```or``` ```not```
+
+### 13.3 Membership Operators
+
+<b>Code:</b>
+
+```
+name =  "Alexa"
+first_name = ["John", "Harry", "Alexa"]
+if name in first_name:
+   print(f'{name} in first_name.')
+elif name not in first_name:
+   print(f'{name} not in first_name.')
+
+```
+
+<b>Operators:</b> ```in``` ```not in```
+
+### 13.4 Identity Operators
+
+<b>Operators:</b> ```is``` ```is not```
+
+
+## 14. Loops
+<b>Note:</b>
+
+* A loop is used for iterating over a set of statements.
+
+### 14.1 Simple Loop
+<b>Code:</b>
+
+```
+first_name = ["Alexa", "John", "Harry"]
+
+for name in first_name:
+    print(f'{name}')
+
+```
+
+### 14.2 Loop with Break
+
+<b>Code:</b>
+
+```
+first_name = ["Alexa", "John", "Harry"]
+
+for name in first_name:
+    if name == "John":
+       break
+    print(f'{name}')
+
+```
+
+### 14.3 Loop with Continue
+
+<b>Code:</b>
+
+```
+first_name = ["Alexa", "John", "Harry"]
+
+for name in first_name:
+    if name == "John":
+       continue
+    print(f'{name}')
+
+```
+
+### 14.4 Range
+
+<b>Code:</b>
+
+```
+for i in range(0, 10):
+    print(f'{i}')
+
+```
+
+### 14.5 While Loop
+
+<b>Code:</b>
+
+```
+count = 0
+while count <= 10:
+  print(f'{count}')
+  count += 1  # count = count + 1
+
+```
+
+
+
+
+
+
+### Stay Tuned for learning more...
+### Download OpenAcademy Android App for learning resources in Data Science and Machine Learning 
+[Download Here](https://play.google.com/store/apps/details?id=in.paperwrk.openacademyapp)
